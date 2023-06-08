@@ -42,3 +42,45 @@ en "section".
 */
 
 /* Comienza a escribir su código aquí */
+
+let pokeArticle = "";
+
+for (let pokemon of data) {
+  pokeArticle +=`
+  <article>
+  <img
+  src=${pokemon.thumbnail}
+    class="icon-type"
+    alt="icon type"
+  />
+  <p>
+  ${pokemon.name}
+  </p>
+</article>` 
+};
+
+const pokeSection = document.querySelector("section");
+pokeSection.innerHTML = pokeArticle;
+
+const articles = document.querySelectorAll("article")
+console.log(articles)
+for (let pokemon of articles) {
+  
+
+  pokemon.addEventListener("mouseover" , function (){
+    pokemon.classList.add("planta")
+  });
+
+  pokemon.addEventListener("mouseout", function (){
+    pokemon.classList.remove("planta")
+  })
+
+
+  // porque de esta manera no funciiona bien?
+  // pokemon.addEventListener("mouseover" , function (){
+  //   pokemon.classList.toggle("planta")
+  // });
+  
+}
+
+

@@ -24,26 +24,26 @@ if (ejercicio == 0) {
 // Ejercicios de sintaxis de "for"
 if (ejercicio == 1) {
     // Descomentar cada bloque y encontrar el error de sintaxis :D
-    /*for(i=0;<10i++){
-        console.log(`el valor de "i" es: ${i}`);
+    for(let i=0;i <10 ;i++){
+        console.log(`1 el valor de "i" es: ${i}`);
     }
-    */
-       /*forar i=0;<10;i++){
-        console.log(`el valor de "i" es: ${i}`);
+    
+       for (let i=0; i <10;i++){
+        console.log(` 2 el valor de "i" es: ${i}`);
     }
-    */
-       /*for(var i=0;0<10;i++){
-        console.log(`el valor de "i" es: ${i}`);
+    
+       for(let i=0 ; i < 10 ;i++){
+        console.log(`3 el valor de "i" es: ${i}`);
     }
-    */
-       /*for(var i=0;i>10;i++){
-        console.log(`el valor de "i" es: ${i}`);
+    
+       for (let i=0 ; i < 10 ;i++){
+        console.log(`4 el valor de "i" es: ${i}`);
     }
-    */
-       /*for(var i=o;i<1o;i++){
-        consolelog(`el valor de "i" es: ${i}`);
+    
+       for(let i=0 ; i < 1 ;i++){
+        console.log(`5 el valor de "i" es: ${i}`);
     }
-    */
+    
 
 }
 
@@ -53,7 +53,13 @@ if (ejercicio == 2) {
     // En cada iteración del bucle imprimir en consola el número
     // o índice que irá incrementando
     // Utilice bucle "for"
+    for (let i = 0 ; i < 10 ; i++){
+        console.log(i)
+    }
 }
+
+
+
 
 // Ejercicios de práctica numérica con bucle for of
 if (ejercicio == 3) {
